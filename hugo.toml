@@ -1,0 +1,86 @@
+baseURL = "http://example.org/"
+languageCode = "ja"
+defaultContentLanguage = "ja"
+hasCJKLanguage = true
+title = "旭デルタ"
+theme = "hugo-theme-stack"
+copyright = "Asahi Delta"
+
+[params]
+    mainSections = ["posts"]
+    featuredImageField = "image"
+    rssFullText = true
+    # ↓ この画像がないとエラーになるので、後で入れます
+    favicon = "images/avatar.png" 
+
+    # --- 左サイドバー（プロフィール） ---
+    [params.sidebar]
+        subtitle = "『自由の国』の黒人たちの歴史と文化を紐解く。"
+        avatar = "images/avatar.png"  # ★重要：assets/images/の中を見に行きます
+        
+        [params.sidebar.containerToContent]
+            order = 0
+
+    # --- 記事設定 ---
+    [params.article]
+        dateFormat = "2006年01月02日"
+        license = { enabled = false }
+        toc = { enabled = true, ordering = "auto" }
+
+    # --- 右サイドバー ---
+    [params.widgets]
+        # エラーの原因だった startOpen = true は削除済み
+        # エラーの原因だった icon がないウィジェットも一旦削除
+        enabled = ["search", "categories", "tag-cloud"]
+
+# --- メニュー設定（アイコンは最初からあるものだけ使用） ---
+[[menu.main]]
+    identifier = "home"
+    name = "ホーム"
+    url = "/"
+    weight = 1
+    [menu.main.params]
+        icon = "home"
+
+[[menu.main]]
+    identifier = "archives"
+    name = "全記事"
+    url = "/archives/"
+    weight = 2
+    [menu.main.params]
+        icon = "archive"
+
+# --- プロフィール ---
+    [[menu.main]]
+        identifier = "profile"
+        name = "プロフィール"
+        url = "/page/profile/"
+        weight = 10  # 数字を小さくすると、メニューの一番上に表示されます
+        [menu.main.params]
+            icon = "user"
+
+# --- Twitter (X) ---
+#    [[menu.main]]
+#        identifier = "twitter"
+#        name = "Twitter"
+#        url = "https://twitter.com/USERNAME"
+#        weight = 50
+#        [menu.main.params]
+#            icon = "brand-twitter"
+#            newTab = true
+
+# --- Bluesky ---
+    [[menu.main]]
+        identifier = "bluesky"
+        name = "Bluesky"
+        url = "https://bsky.app/profile/asahidelta.bsky.social"
+        weight = 40
+        [menu.main.params]
+            icon = "brand-bluesky"
+            newTab = true
+
+# --- HTMLタグを有効にする設定 ---
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
