@@ -2,7 +2,7 @@
 title: "私が黒人史を学び始めた理由"
 date: 2026-02-01T12:00:00+09:00
 image: "cover.jpg"
-draft: true
+draft: false
 categories: ["雑記"]
 tags: ["ブログ運営", "多文化共生", "学び"]
 ---
