@@ -3,6 +3,7 @@ title: "歴史を動かしたのは、日本での「ある学生」との会話
 date: 2026-02-07T12:00:00+09:00
 image: "cover.jpg"
 draft: false
+comments: false
 categories: ["アメリカ黒人史"]
 tags: ["公民権運動", "ジェームズ・メレディス", "ミシシッピ大学"]
 ---
