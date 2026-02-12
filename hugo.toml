@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://asahidelta.netlify.app/"
 languageCode = "ja"
 defaultContentLanguage = "ja"
 hasCJKLanguage = true
@@ -15,7 +15,7 @@ copyright = "Asahi Delta"
 
     # --- 左サイドバー（プロフィール） ---
     [params.sidebar]
-        subtitle = "『自由の国』の黒人たちの歴史と文化を紐解く。"
+        subtitle = "アメリカの黒人史について勉強中です。のんびりブログを更新します。"
         avatar = "images/avatar.png"  # ★重要：assets/images/の中を見に行きます
         
         [params.sidebar.containerToContent]
