@@ -1,0 +1,49 @@
+<footer class="article-footer">
+    {{ partial "article/components/tags" . }}
+
+    <div class="article-share" style="
+        margin-top: 30px; 
+        padding-top: 20px; 
+        border-top: 1px solid var(--card-border-color);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    ">
+        <button id="force-copy-btn" style="
+            background-color: var(--card-background); 
+            border: 1px solid var(--body-text-color); 
+            color: var(--body-text-color);
+            padding: 10px 20px; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 8px;
+            font-size: 0.95rem;
+            font-weight: bold;
+        ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+            </svg>
+            <span>この記事のURLをコピー</span>
+        </button>
+        
+        <span id="force-copy-msg" style="color: #10b981; opacity: 0; transition: opacity 0.3s; font-weight: bold;">
+            ✓ コピーしました！
+        </span>
+    </div>
+
+    <script>
+        document.getElementById('force-copy-btn').addEventListener('click', function() {
+            const msg = document.getElementById('force-copy-msg');
+            navigator.clipboard.writeText(window.location.href).then(function() {
+                msg.style.opacity = '1';
+                setTimeout(() => { msg.style.opacity = '0'; }, 2000);
+            }).catch(function(err) {
+                alert('コピーできませんでした');
+            });
+        });
+    </script>
+</footer>

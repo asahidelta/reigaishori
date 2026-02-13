@@ -15,17 +15,19 @@ copyright = "Asahi Delta"
 
     # --- 左サイドバー（プロフィール） ---
     [params.sidebar]
-        subtitle = "アメリカの黒人史について勉強中です。のんびりブログを更新します。"
+        subtitle = "アメリカ黒人史を勉強しています。"
         avatar = "images/avatar.png"  # ★重要：assets/images/の中を見に行きます
         
         [params.sidebar.containerToContent]
             order = 0
 
     # --- 記事設定 ---
+# --- 記事設定 ---
     [params.article]
         dateFormat = "2006年01月02日"
         license = { enabled = false }
         toc = { enabled = true, ordering = "auto" }
+        share = { enabled = true, platforms = ["Twitter"] }
 
     # --- 右サイドバー ---
     [params.widgets]
