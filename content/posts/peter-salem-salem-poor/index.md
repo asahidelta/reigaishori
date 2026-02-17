@@ -1,8 +1,8 @@
 ---
 title: "『Fallout4』のプレストン・ガービーと「ミニットメン」の史実"
-date: 2026-02-16T12:00:00+09:00
+date: 2026-02-17T21:00:00+09:00
 image: "cover.png"
-draft: true
+draft: false
 comments: false
 categories: ["アメリカ黒人史"]
 tags: ["独立戦争", "ピーター・セーラム", "セーラム・プア", "黒人兵士","Fallout4"]
