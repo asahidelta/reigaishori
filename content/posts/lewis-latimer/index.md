@@ -1,5 +1,5 @@
 ---
-title: "エジソンが惚れた、唯一の黒人製図家"
+title: "エジソンが惚れた、唯一の黒人技術者"
 date: 2026-02-24T20:00:00+09:00
 image: "cover.jpg"
 draft: false
