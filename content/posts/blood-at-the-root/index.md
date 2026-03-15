@@ -58,4 +58,4 @@ tags: ["ブラッド・アット・ザ・ルート", "フォーサイス", "人�
 
 #### 画像出典
 * [Wikimedia Commons（カバー画像）](https://commons.wikimedia.org/wiki/File:Old_Forsyth_County_Courthouse_-_panoramio.jpg) by Thomson M / [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
-*
+* [picryl（南軍期）](https://picryl.com/media/confederate-flag-modern-e6454c)
